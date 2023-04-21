@@ -51,7 +51,7 @@ EOD
             ->addArgument('template', InputArgument::OPTIONAL, 'Template to compiler');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $template = $input->getArgument('template');
 
