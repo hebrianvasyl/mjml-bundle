@@ -28,6 +28,8 @@ services:
 
     assoconnect_mjml.mjml_compiler:
         class: Assoconnect\MJMLBundle\Compiler\MjmlCompiler
+        arguments:
+            $projectDir: "%kernel.project_dir%"
 
     assoconnect_mjml.template_finder:
         class: Assoconnect\MJMLBundle\Finder\TemplateFinder
